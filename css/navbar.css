@@ -1,16 +1,20 @@
-.flex-navbar {
+.navbar {
+  grid-area: nav;
+}
+
+.navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  text-align: center;
+  padding: 0px;
 }
-
-.flex-navbar > div {
-  flex-basis: calc(15%);
-}
-.flex-navbar > li {
+.navbar li {
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #343638;
 }
