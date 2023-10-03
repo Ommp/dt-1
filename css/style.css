@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(20px, auto);
+}
+
+main {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+  text-align: center;
+  /* border-radius: 1px;
+  border-color: red;
+  border-style: dotted; */
+}
+
+main>p {
+  font-family: 'Times New Roman', Times, serif;
+}
