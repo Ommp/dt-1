@@ -10,13 +10,17 @@
   /* background-color: #4b566a; */
 }
 
-article {
+.main {
   grid-area: content;
   text-align: center;
 }
 
-article p {
+.main p {
   font-family: "Times New Roman", Times, serif;
 }
 
-
+#main-image {
+  border-radius: 12px;
+  max-width: 80%;
+  height: auto;
+}
