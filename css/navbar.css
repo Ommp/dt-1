@@ -1,5 +1,7 @@
 .navbar {
   grid-area: nav;
+  border-bottom: #343638;
+  border-style: dashed;
 }
 
 .navbar ul {
@@ -7,14 +9,18 @@
   flex-direction: row;
   justify-content: center;
   padding: 0px;
+  
 }
 .navbar li {
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
+  
 }
 
 .navbar a {
   text-decoration: none;
   color: #343638;
+  font-weight: bold;
+  
 }

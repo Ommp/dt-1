@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../../views/partials/head'); %>
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <%- include('../../views/partials/header'); %>
+    <%=  %>
+    <main class="main">
+      <h1 class="title">Guess the Number</h1>
+
+      <hr>
+      <h5>Guess a number between (not including): <br \>  </h5>
+      <input type="number" name="min" id="min" class="game-inputs" value="1"> <br>
+      <br>
+      <input type="number" name="max" id="max" class="game-inputs" value="100">
+      <br>
+      <br>
+      <button id="start" class="buttons">Start</button>
+      <h5>Enter your guess</h5>
+      <input type="number" name="guess" id="guessed_number" class="game-inputs" value="0">
+      <br>
+      <br>
+      <button id="submit-guess" class="buttons">Submit</button>
+      <h5 id="guess-result">Guess result:</h5>
+      <ol style="padding: 0px;" id="guesses">Guesses:
+      
+      </ol>
+    </main>
+
+    <%- include('../../views/partials/footer'); %>
+
+    
+  </body>
+  <script src="/guessthenumber.js"></script>
+</html>
