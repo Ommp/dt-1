@@ -12,6 +12,9 @@ function startGame() {
     let min = parseInt(document.getElementById("min").value);
     let max = parseInt(document.getElementById("max").value);
     actual_number = Math.floor(Math.random() * (max - min) ) + min;
+
+    guesses = [];
+    document.getElementById("guesses").innerHTML = "";
 }
 
 function processGuess() {
@@ -25,7 +28,7 @@ function processGuess() {
     } else if (guess === actual_number) {
         guess_result.innerHTML = "Correct!";
     }
-
+    
     const li_node = document.createElement("li");
     const guess_node = document.createTextNode(guess);
     li_node.appendChild(guess_node);

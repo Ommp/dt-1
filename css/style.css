@@ -1,15 +1,12 @@
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: 3fr;
-  grid-template-areas:
-    "nav"
-    "content"
-    "footer";
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .main {
-  grid-area: content;
+  grid-column: 2;
+  grid-row: 2;
   text-align: center;
 }
 
@@ -39,4 +36,14 @@
   appearance: none;
   font-size: 1em;
   background-color: rgb(112, 255, 167);
+}
+
+#prosjekter {
+  padding: 0;
+  list-style-type: none;
+}
+
+#prosjekter a {
+  text-decoration: none;
+  color: rgb(41, 41, 41);
 }

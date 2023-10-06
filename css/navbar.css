@@ -1,7 +1,8 @@
 .navbar {
-  grid-area: nav;
+  grid-column: 2;
+  grid-row: 1;
   border-bottom: #343638;
-  border-style: dashed;
+  border-style: ridge;
 }
 
 .navbar ul {
